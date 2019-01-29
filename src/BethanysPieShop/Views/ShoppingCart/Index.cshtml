@@ -1,0 +1,58 @@
+﻿@model ShoppingCartViewModel
+
+<h2>Your shopping cart</h2>
+<h4>Here are the delicious pies in your shopping cart.</h4>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Item No.</th>
+            <th>Quantity</th>
+            <th>Pie</th>
+            <th class="text-right">Price</th>
+            <th class="text-right">Subtotal</th>
+            <th class="text-right"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int index = 1;}
+        @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+        {
+        <tr>
+            <td class="text-center">@index</td>
+            @{index++;}
+
+            <td>
+                <div class="text-center">
+                    <a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-pieId="@line.Pie.PieId"> <span class="glyphicon glyphicon-minus-sign" /> </a>
+                    @line.Amount
+                    <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-pieId="@line.Pie.PieId"> <span class="glyphicon glyphicon-plus-sign" /> </a>
+
+                </div>
+            </td>
+            <td class="text-left">@line.Pie.Name</td>
+            <td class="text-right">@line.Pie.Price.ToString("c")</td>
+            <td class="text-right">
+                @((line.Amount * line.Pie.Price).ToString("c"))
+            </td>
+            <td>
+                <a asp-controller="ShoppingCart" asp-action="RemoveAllFromShoppingCart" asp-route-pieId="@line.Pie.PieId"> <span class="glyphicon glyphicon-trash" /> </a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total:</td>
+            <td class="text-right">
+                @Model.ShoppingCartTotal.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-right">
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Checkout Now!</a>
+   
+    <a class="btn btn-primary" asp-controller="Pie" asp-action="List" asp-route-Category="">Add More Pies!</a>
+</div>

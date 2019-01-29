@@ -1,0 +1,11 @@
+E:\Imran\BethanysPieShop\src\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.deps.json
+E:\Imran\BethanysPieShop\src\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.runtimeconfig.json
+E:\Imran\BethanysPieShop\src\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.runtimeconfig.dev.json
+E:\Imran\BethanysPieShop\src\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.dll
+E:\Imran\BethanysPieShop\src\BethanysPieShop\bin\Debug\netcoreapp2.0\BethanysPieShop.pdb
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.csproj.CoreCompileInputs.cache
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.AssemblyInfoInputs.cache
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.AssemblyInfo.cs
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.dll
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.pdb
+E:\Imran\BethanysPieShop\src\BethanysPieShop\obj\Debug\netcoreapp2.0\BethanysPieShop.csprojAssemblyReference.cache
